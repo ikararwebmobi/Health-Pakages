@@ -1,0 +1,31 @@
+.form-control-wrap{
+        position: relative;
+        .form-icon{
+            display: inline-block;
+            position: absolute;
+            top: 57%;
+            left: 1rem;
+            transform: translateY(-50%);
+            cursor: pointer;
+            color: $gray-300;
+            font-size: 1.25rem;
+        }
+        &.icon-left{
+            .form-control{
+                padding-inline-start: 3rem;
+            }
+            .form-icon{
+                left: 1rem;
+                right: auto;
+            }
+        }
+        &.icon-right{
+            .form-control{
+                padding-inline-end: 3rem;
+            }
+            .form-icon{
+                left: auto;
+                right: 1rem;
+            }
+        }
+    }

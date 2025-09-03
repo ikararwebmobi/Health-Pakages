@@ -1,0 +1,8 @@
+$custom-theme-colors:(
+  // "indigo":  #6B3CEB,
+  // "primary":       $blue,
+  "white": $white,
+
+);
+
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);

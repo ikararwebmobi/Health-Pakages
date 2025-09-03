@@ -1,0 +1,97 @@
+
+nav#sidebar {
+	padding: 0 !important;
+
+}
+
+#sidebarNavigation {
+	background-color: $white;
+	height: 100%;
+    // @include media-breakpoint-down(lg) {
+    //     position: fixed;
+	// 	top: 0;
+	// 	left: 0;
+	// 	z-index: 300;
+	// 	height: 100vh;
+	// 	overflow: auto;
+	// 	background-color: $white;
+	// 	box-shadow: 0 5px 15px 20px rgba($dark, 0.15),200px 0 50px 0 rgba($primary, 0.15) inset;
+	// 	width: 80%;
+	// 	max-width: 260px;
+	// 	padding: 1rem;
+	// 	display: block;
+	// 	visibility: hidden;
+	// 	transform: translate(-100%, 0);
+	// 	-webkit-transform: translate(-100%, 0);
+	// 	transition: all 0.35s ease-in-out 0s;
+	// 	-webkit-transition: 0.35s ease-in-out;
+	// 	-moz-transition: 0.35s ease-in-out;
+	// 	-ms-transition: all 0.35s ease-in-out 0s;
+	// 	-o-transition: 0.35s ease-in-out;
+    // }
+    // &.show {
+	// 	transform: translate(0, 0);
+	// 	-webkit-transform: translate(0, 0);
+	// 	visibility: visible;
+	// }
+    .logo-block{
+        padding: 1rem 0;
+    }
+}
+
+.leftbar-nav {
+    .navbar-nav {
+        width: 100%;
+        height: 100%;
+        padding: .5rem;
+        flex-direction: column;
+        margin-top: 1rem;
+        .nav-item {
+            position: relative;
+            display: block;
+            margin-bottom: .25rem;
+            .nav-link {
+                color: $gray-600;
+                padding: 0.75rem 1rem;
+                display: inline-flex;
+                align-items: center;
+                width: 100%;
+                font-weight: 500;
+                border-radius: .25rem;
+                font-size: .875rem;
+                @include transition(.25);
+                i {
+                    font-size: 1.125rem;
+                    margin-right: 1rem;
+                     @include transition(.25);
+                }
+                &:hover{
+                   color: $gray-700;
+                   ///background-color: $gray-50;
+                   background-color: tint($success, 75%);
+                   i {
+                    font-family:"Phosphor-Fill" !important;
+                     color: $gray-600;
+                    }
+                }
+                .badge{
+                    background-color:$secondary;
+                    color: $white;
+                    @include flex-item(row,center,center);
+                    border-radius: 5rem;
+                    position: absolute;
+                    right: 1rem;
+                }
+            }
+            &.active{
+                .nav-link{
+                    color: $gray-900;
+                    background-color: $success;
+                    i {
+                    font-family:"Phosphor-Fill" !important;
+                    }
+                }
+            }
+        }
+    }
+}

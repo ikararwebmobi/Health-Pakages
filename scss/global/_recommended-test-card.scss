@@ -1,0 +1,60 @@
+// Recommended Test Card SCSS using existing variables
+.recommended-test-card {
+  // border-radius: $card-radius;
+  // box-shadow: $card-shadow;
+  // background: $card-bg;
+  .urgent-badge {
+    background: $danger-bg;
+    color: $danger-text;
+    font-size: $badge-font-size;
+    padding: $badge-padding;
+    border-radius: $badge-radius;
+  }
+  .due-date {
+    color: $muted-text;
+    font-size: $small-font-size;
+  }
+  .test-title {
+    color: $heading-color;
+    font-weight: $font-bold;
+    font-size: $h5-font-size;
+  }
+  .test-date {
+    color: $muted-text;
+    font-size: $small-font-size;
+  }
+  .test-price {
+    color: $primary-color;
+    font-size: $price-font-size;
+    font-weight: $font-bold;
+  }
+  .test-price-old {
+    color: $muted-text;
+    text-decoration: line-through;
+    font-size: $price-font-size;
+  }
+  .test-info {
+    li {
+      color: $body-color;
+      font-size: $body-font-size;
+      margin-bottom: $info-spacing;
+      .dot {
+        display: inline-block;
+        width: $dot-size;
+        height: $dot-size;
+        background: $dot-color;
+        border-radius: 50%;
+        margin-right: $dot-spacing;
+      }
+    }
+  }
+  .view-details-link {
+    color: $link-color;
+    font-weight: $font-medium;
+    text-decoration: none;
+    .arrow {
+      font-size: $arrow-size;
+      margin-left: $arrow-spacing;
+    }
+  }
+}

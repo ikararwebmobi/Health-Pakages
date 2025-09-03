@@ -1,0 +1,13 @@
+.lab-card{
+    .card-header{
+        position: relative;
+        border: 0;
+        background-color: tint($success,85%);
+        .ratings{
+            position: absolute;
+            right: 16px;
+            top:16px
+
+        }
+    }
+}

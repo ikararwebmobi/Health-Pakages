@@ -1,0 +1,83 @@
+.authentication-wrapper{
+    .authentication-logo{
+        max-width: 200px;
+    }
+
+    .authentication-story-board{
+        background: $secondary url("../images/assets/authentication-bg.jpg") no-repeat center center/cover;
+        @include flex-item(column, flex-start, flex-start);
+        padding-block:clamp(1rem, -0.5968rem + 4.0798vw, 5rem);
+        padding-inline:clamp(1rem, -0.5968rem + 5vw, 5.75rem);
+    }
+    .authentication-form-wrapper{
+        @include flex-item(column, flex-start, flex-start);
+        padding-block:clamp(1rem, -0.5968rem + 4.0798vw, 5rem);
+        padding-inline:clamp(1rem, -0.5968rem + 5vw, 5.75rem);
+    }
+    .authentication-form-container{
+        width: 100%;
+    }
+    .otp-input{
+        font-size: 1.25rem;
+        text-align: center;
+        color: $gray-800;
+        max-width: 56px;
+    }
+    .password-field{
+        position: relative;
+        .form-control{
+            padding-inline-end: 3rem;
+        }
+        .show-password{
+            display: inline-block;
+            position: absolute;
+            top: 57%;
+            right: 1rem;
+            transform: translateY(-50%);
+            cursor: pointer;
+            color: $gray-300;
+            font-size: 1.25rem;
+        }
+    }
+
+}
+.super-admin-wrapper{
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    .curve-bg{
+        position: absolute;
+        left: 50%;
+        top:50vh;
+        z-index: -1;
+        width: 200%;
+        transform: translateX(-50%);
+        svg{
+            width: 100%;
+            height: auto;
+            // transform: scaleY(-1);
+            fill:#000
+        }
+    }
+    .authentication-logo{
+        max-width: 150px;
+    }
+    &:after{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: url("../images/assets/checkerboard-cross.png") repeat 0 0 ;
+        z-index: -2;
+        opacity: .25;
+    }
+    .super-admin-authentication{
+        border-radius: 1rem;
+        padding: 1.5rem;
+        background: $white;
+        box-shadow: 0 -1rem 1rem .5rem rgba(0, 0, 0, 0.05);
+    }
+}
+

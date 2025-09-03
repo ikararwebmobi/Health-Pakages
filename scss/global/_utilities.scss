@@ -1,0 +1,90 @@
+.underline {
+	display: inline-block;
+	position: relative;
+	padding-bottom: 3px;
+	text-decoration: none;
+	&:after {
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		border: 2px solid;
+		width: 100%;
+		height: 2px;
+	}
+}
+
+.breadcrumb{
+	a{
+		color: $gray-400;
+	}
+}
+$grayColors:(
+	"gray-50":$gray-50,
+	"gray-100":$gray-100,
+	"gray-200":$gray-200,
+	"gray-300":$gray-300,
+	"gray-400":$gray-400,
+	"gray-500":$gray-500,
+	"gray-600":$gray-600,
+	"gray-700":$gray-700,
+	"gray-800":$gray-800,
+	"gray-900":$gray-900,
+);
+@each $label, $color in $grayColors{
+	.text-#{$label}{
+		color: $color !important;
+	}
+}
+
+/* #Progress
+================================================== */
+
+.suggested-test-list,.appointment-list{
+	.list-group-item{
+		position: relative;
+		.badge{
+			position: absolute;
+			right: 0;
+			top: 0;
+			@include media-breakpoint-only(xl){
+				position: relative !important;
+				left: 2.75rem !important;
+				top: -.125rem !important;
+			}
+		}
+	}
+}
+.list-check-circle {
+	padding: 0;
+	list-style: none;
+	li {
+		position: relative;
+		margin-bottom: 1.5rem;
+		padding-left: 3rem;
+		&:before {
+			content: "\e182";
+			position: absolute;
+			left: 0;
+			top: 0;
+			font-family: "Phosphor";
+		}
+	}
+}
+.list-circle {
+	padding: 0;
+	list-style: none;
+	li {
+		position: relative;
+		margin-bottom: .25rem;
+		padding-left: .75rem;
+		&:before {
+			content: "\e18a";
+			position: absolute;
+			left: 0;
+			top: .35rem; 
+			font-family: "Phosphor-Fill";
+			font-size:.5rem;
+		}
+	}
+}

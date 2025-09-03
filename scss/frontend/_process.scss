@@ -1,0 +1,59 @@
+.process-wrapper{
+    background: linear-gradient(180deg, #E5FFC2 26.3%, #FFFFFF 100%);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    &::before,&::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url(../images/assets/boxes.png) no-repeat 0  0;
+        z-index: -1;
+    }
+     &::after{
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url(../images/assets/wave-bg.svg) no-repeat center 0 / 100%;
+        z-index: -2;
+        @include media-breakpoint-down(xl) {
+            background-size: 170% auto;
+        }
+        @include media-breakpoint-down(lg) {
+            background-size: 170% auto;
+        }
+        @include media-breakpoint-down(sm) {
+            background-size: 500%;
+        }
+    }
+    .feature-card{
+        .icon-box{
+            background-color: $gray-50;
+            i{
+                color: $primary;
+            }
+        }
+        &:hover{
+            .icon-box{
+                background-color: $primary;
+                i{
+                    color: $white;
+                }
+            }
+        }
+        .process-num{
+            position: absolute;
+            right: 1rem;
+            top: 1rem;
+            font-size: $fs-5xl !important;
+            font-weight: 700;
+            color: $gray-50;
+            z-index: 1;
+        }
+    }
+}
+

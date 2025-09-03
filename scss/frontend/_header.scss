@@ -1,0 +1,43 @@
+.header{
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  z-index: 10;
+  transition: all .25s ease 0s;
+  &.header-fixed{
+    background-color: $white;
+  }
+}
+@include media-breakpoint-up(sm){
+	.header-fixed {
+		background-color: #fff;
+		box-shadow: 0 2px 6px #0003;
+		-webkit-animation: slide-down 0.7s;
+		animation: slide-down 0.7s;
+		position: fixed;
+		top: -5px;
+		right: 0;
+		left: 0;
+		z-index: 1030;
+    .navbar-brand{
+      img {
+        max-width: 150px !important;
+        padding: 0.5em 0 !important;
+      }
+    }
+	}
+}
+
+	@keyframes slide-down {
+		0% {
+			opacity: 0;
+			transform: translateY(-100%);
+		}
+
+		100% {
+			opacity: 0.9;
+			transform: translateY(0);
+		}
+	}
+

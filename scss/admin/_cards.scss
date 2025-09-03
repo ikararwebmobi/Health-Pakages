@@ -1,0 +1,11 @@
+.card{
+    &.card-hover{
+        @include transition(.25);
+        &:hover{
+           border-color: $dark;
+        }
+    }
+    &.card-selected{
+        border-color: $success !important;
+    }
+}

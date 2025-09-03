@@ -1,0 +1,30 @@
+.promotion-wrapper {
+	position: relative;
+	z-index: 10;
+	.promotion-module {
+		position: relative;
+		z-index: 10;
+		@include media-breakpoint-up(md) {
+			margin-top: -3rem;
+		}
+		@include media-breakpoint-up(lg) {
+			margin-top: -3rem;
+		}
+		.card-promotion{
+			background-color: $secondary;
+		}
+	}
+}
+
+.card-promotion {
+	position: relative;
+	border-radius: 0.9375rem;
+	box-shadow: 0px 0px 60px 0px rgba(0, 16, 51, 0.25);
+	.promotion-icon {
+		position: absolute;
+		right: 0.5rem;
+		bottom: -2rem;
+		font-size: 9rem;
+		color: rgba($primary, 0.15);
+	}
+}

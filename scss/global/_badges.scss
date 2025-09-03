@@ -1,0 +1,29 @@
+.badge{
+    font-weight: 500;
+}
+.badge-fade{
+    &.bg-primary{
+        background-color: tint($primary,75%) !important;
+        color: shade($primary,25%);
+    }
+    &.bg-secondary{
+        background-color: tint($secondary,75%) !important;
+        color: shade($secondary,25%);
+    }
+    &.bg-warning{
+        background-color: tint($warning,75%) !important;
+        color: shade($warning,25%);
+    }
+    &.bg-info{
+        background-color: tint($info,75%) !important;
+        color: shade($info,25%);
+    }
+    &.bg-success{
+        background-color: tint($success,75%) !important;
+        color: shade($success,25%);
+    }
+    &.bg-danger{
+        background-color: tint($danger,75%) !important;
+        color: shade($danger,25%);
+    }
+}

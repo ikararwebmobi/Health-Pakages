@@ -1,0 +1,38 @@
+table{
+	border: 1px solid $gray-100 !important;
+	font-size: $fs-sm;
+	color: $gray-400;
+	thead{
+		tr{
+			th,td{
+				background-color: $gray-50 !important;
+				border:$gray-100 !important;
+				font-weight: 500;
+			}
+		}
+	}
+	&.table-hover{
+	tbody{
+		tr{
+			td,th{
+				border-top: 1px solid $gray-100 !important;
+				border-bottom: 1px solid $gray-100 !important;
+				.btn{
+				 & + .btn{
+					margin-inline-start: .25rem;
+				 }
+				}
+			}
+			&:hover {
+				> td, > th, > *{
+				background-color: rgba($gray-50,.5)!important;
+				border-top:1px solid $gray-100 !important;
+				border-bottom:1px solid $gray-100 !important;
+
+				}
+			}
+
+		}
+	}
+}
+}

@@ -1,0 +1,104 @@
+//COLORS THEME
+$primary: #44A9DF;
+$secondary: #255D7B;
+$success: #8EC73F;
+$danger: #DD3409;
+$warning:#FFC54F;
+$dark: #1B2533;
+$info: #017EF3;
+$indigo: #6610f2;
+$light: #e5e5e5;
+$gray-50: #ECEEF0;
+$gray-100: #DADCE0;
+$gray-200: #B4B9C1;
+$gray-300: #8F97A2;
+$gray-400: #697483;
+$gray-500: #445164;
+$gray-600: #323E4F;
+$gray-700: #242F3E;
+$gray-800: #1B2533;
+$gray-900: #19212B;
+$black: #000000;
+$white: #ffffff;
+$body-bg: $white;
+$body-color: $gray-500;
+
+// FONT-SIZE
+
+$fs-xs: 0.75rem;
+$fs-sm: 0.875rem;
+$fs-base: unquote("clamp(0.875rem, 0.7188rem + 0.5vw, 1rem)");
+$fs-md: unquote("clamp(0.875rem, 0.5625rem + 1vw, 1.125rem)");
+$fs-lg: unquote("clamp(1.05rem, -0.1034rem + 2.406vw, 1.375rem)");
+$fs-xl: unquote("clamp(1.25rem, -0.1917rem + 3.0075vw, 1.563rem)");
+$fs-2xl: unquote("clamp(1.5rem, -0.6626rem + 4.5113vw, 1.875rem)");
+$fs-3xl: unquote("clamp(1.875rem, -1.7293rem + 7.5188vw, 2.5rem)");
+$fs-4xl: unquote("clamp(2rem, -4.4878rem + 13.5338vw, 3.125rem)");
+$fs-5xl: unquote("clamp(3rem, -1.3252rem + 9.0226vw, 4.375rem)");
+$fs-6xl: unquote("clamp(4rem, 0.15rem + 7vw, 4.75rem)");
+
+//$min-contrast-ratio: 1.95;
+
+$font-weight-base: 400;
+$enable-negative-margins: true;
+
+//BUTTONS
+
+//$btn-border-radius: 5rem;
+//$btn-border-radius-sm: 5rem;
+$btn-font-weight: 500;
+// $dropdown-item-padding-y: 0.5rem;
+$input-btn-padding-y-sm:.5rem;
+$input-btn-padding-x-sm:.75rem;
+$input-btn-font-size-sm:$fs-sm;
+ $btn-padding-x: 1rem;
+ $btn-padding-y: 0.65rem;
+// $btn-font-size-lg: 1.125rem;
+// $btn-padding-x-lg: 3rem;
+// $btn-padding-y-lg: 0.75rem;
+//$btn-border-radius-lg: 5rem;
+
+
+//HEADINGS
+
+$headings-font-weight: 600;
+$headings-color: $dark;
+
+
+// FORMS
+
+$form-label-font-size:.875rem;
+$form-label-font-weight: 500;
+$form-label-color:$gray-600;
+
+$input-padding-y: 0.5rem;
+$input-padding-x: 1rem;
+$input-border-color: $gray-200;
+$input-focus-border-color: $primary;
+$input-placeholder-color:$gray-200;
+$input-color: $gray-400;
+
+$input-disabled-bg:$gray-100;
+
+$form-check-inline-margin-end:.5rem;
+
+
+// BREADCRUMBS
+
+$breadcrumb-font-size:$fs-sm;
+$breadcrumb-active-color: $gray-800;
+
+$breadcrumb-divider: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 16 16'><path fill='currentColor' d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708'/></svg>");
+
+
+
+//$breadcrumb-divider: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='8' height='8'><path d='M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z'/></svg>");
+
+
+// TABLES
+$table-border-color:$gray-100;
+$table-hover-bg: rgba($gray-50,.15);
+$table-cell-padding-y:.75rem;
+$table-cell-padding-x:1rem;
+// $table-hover-bg-factor:.015;
+// $table-hover-bg:$gray-50;

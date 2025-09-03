@@ -1,0 +1,41 @@
+.quick-contact-wrapper{
+  background: linear-gradient(0deg, #FFFFFF 0%, #E6F8F1 100%);
+  position: relative;
+  overflow: hidden;
+     z-index: 2;
+    &::after{
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 314px;
+      height: 314px;
+      background: url(../images/assets/lab-flask.png) no-repeat 0 0;
+      z-index: -1;
+    }
+.quick-contact-module{
+    background-color: $secondary;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    position: relative;
+
+    .quick-contact-img {
+      img{
+        max-width: 100%;
+      }
+    }
+    @include media-breakpoint-up(sm){
+      .quick-contact-img {
+        position: absolute;
+        right: 0;
+        top: -5rem;
+      }
+    }
+    @include media-breakpoint-down(md){
+      padding: 1rem;
+    }
+
+}
+
+}

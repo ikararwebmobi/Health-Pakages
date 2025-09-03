@@ -1,0 +1,41 @@
+.notification-content{
+    max-height: 300px;
+    max-width: 300px;
+    overflow:auto;
+    .notify-item{
+        margin-bottom: .5rem;
+        border-radius: .25rem;
+        padding: 0;
+        border-bottom: 1px solid $gray-100;
+        position: relative;
+        .card-body{
+            padding: .5rem
+        }
+    }
+
+.note-sec-head{
+    font-size: $fs-xs;
+    color: $gray-300;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-block: .75rem;
+}
+.noti-item-title{
+    font-size: $fs-sm;
+    color: $gray-800;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+.noti-close-btn {
+    position: absolute;
+    top: 3px;
+    right: 5px;
+    font-size: $fs-xs;
+}
+.noti-item-subtitle {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: $fs-xs;
+}
+}

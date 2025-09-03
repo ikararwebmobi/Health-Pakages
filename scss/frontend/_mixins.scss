@@ -1,0 +1,71 @@
+@mixin for-size($size) {
+	@if $size==xs {
+		@media (max-width: 599px) {
+			@content;
+		}
+	} @else if $size==mobile {
+		@media (max-width: 767px) {
+			@content;
+		}
+	} @else if $size==upmd {
+		@media (max-width: 991.9px) {
+			@content;
+		}
+	} @else if $size==mobileToTab {
+		@media (min-width: 768px) and (max-width: 991.5px) {
+			@content;
+		}
+	} @else if $size==sm {
+		@media (min-width: 600px) {
+			@content;
+		}
+	} @else if $size==desktop {
+		@media (min-width: 768px) {
+			@content;
+		}
+	} @else if $size==md {
+		@media (min-width: 900px) {
+			@content;
+		}
+	} @else if $size==lg {
+		@media (min-width: 1200px) {
+			@content;
+		}
+	} @else if $size==xl {
+		@media (min-width: 1800px) {
+			@content;
+		}
+	}
+}
+
+@mixin placeholder {
+	&::-webkit-input-placeholder {
+		@content;
+	}
+	&:-moz-placeholder {
+		@content;
+	}
+	&::-moz-placeholder {
+		@content;
+	}
+	&:-ms-input-placeholder {
+		@content;
+	}
+}
+
+@mixin flex-item($direction, $justify, $align) {
+	display: flex;
+	flex-direction: $direction;
+	justify-content: $justify;
+	align-items: $align;
+}
+
+@mixin transition($smooth) {
+	transition: all #{$smooth}s ease-in-out 0s;
+}
+@function tint($color, $percentage) {
+	@return mix(#fff, $color, $percentage);
+}
+@function shade($color, $percentage) {
+	@return mix(#000, $color, $percentage);
+}

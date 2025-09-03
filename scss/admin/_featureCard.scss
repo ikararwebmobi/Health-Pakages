@@ -1,0 +1,39 @@
+.feature-card {
+	height: 100%;
+	@include transition(0.5);
+	border-radius: .5rem;
+	.icon-box {
+		i,
+		div {
+			@include transition(0.5);
+			transform: rotateY(0deg);
+		}
+	}
+	&:hover {
+		transform: translateY(-1rem);
+		.icon-box {
+			i,
+			> div {
+				transform: rotateY(360deg);
+			}
+		}
+	}
+.feature-bars{
+	display: flex;
+	gap: .25rem;
+	margin-bottom: 1rem;
+        .head-dots{
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            display: inline-block;
+			background-color: $danger;
+			&:nth-child(2){
+				background-color: $warning;
+			}
+			&:nth-child(3){
+				background-color: $primary;
+			}
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.circular-completion{
+
+	.mkc_circle {
+		animation: mck_progress 1000ms ease-in-out;
+		stroke: $success;
+	}
+
+	@keyframes mck_progress {
+		0% {
+			stroke-dasharray: 0, 100;
+		}
+	}
+
+	.mkc_circle-bg {
+		stroke: $gray-200;
+		stroke-width: 3px;
+		opacity: 0.25;
+	}
+
+	.mkc_info {
+		fill:$gray-800;
+		text-anchor: middle;
+		font-weight: 600;
+	}
+	.mkc_sub_info {
+		fill:$gray-400;
+		text-anchor: middle;
+		font-weight: 400;
+	}
+}

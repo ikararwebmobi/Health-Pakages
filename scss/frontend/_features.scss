@@ -1,0 +1,24 @@
+.features-wrapper {
+	position: relative;
+    background-color: tint($success, 90%);
+    .feature-card{
+        .icon-box{
+            background-color: tint($primary, 90%);
+            i{
+                color: $secondary;
+            }
+        }
+        &:hover{
+            .icon-box{
+                background-color: $secondary;
+                i{
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+
+
+

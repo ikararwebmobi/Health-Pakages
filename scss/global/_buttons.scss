@@ -1,0 +1,43 @@
+.btn{
+	display: inline-flex;
+	gap:.25rem;
+	align-items: center;
+	justify-content: center;
+	line-height: 1.2;
+	&.btn-icon{
+		i:only-child {
+			line-height: 1.5; // icon-only case
+		}
+  }
+	&.btn-default{
+		border-color: $gray-200;
+		background-color: $white;
+		color: $gray-500;
+		&:hover{
+			background-color: $gray-50;
+			border-color: $gray-200;
+		}
+		&:focus{
+			background-color: $gray-200;
+			border-color: $gray-200;
+		}
+		&:active{
+			background-color: $gray-200;
+			border-color: $gray-200;
+		}
+	}
+	&.btn-sm{
+		svg{
+			width: 16px;
+			height: 16px;
+		}
+	}
+	&.btn-xs{
+		padding: .35rem .5rem;
+		font-size: $fs-xs;
+		svg{
+			width: 14px;
+			height: 14px;
+		}
+	}
+}

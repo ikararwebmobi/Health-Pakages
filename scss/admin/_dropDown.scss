@@ -1,0 +1,18 @@
+.dropdown-menu{
+	.dropdown-item{
+		i{
+			margin-inline-end: .5rem;
+		}
+		&:hover{
+			background-color: $gray-50;
+			color:$gray-800;
+		}
+	}
+}
+.notification-dropdown{
+	.dropdown-item{
+		i{
+			margin-inline-end: 0;
+		}
+	}
+}
