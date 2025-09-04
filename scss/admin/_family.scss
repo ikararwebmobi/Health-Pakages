@@ -1,0 +1,37 @@
+.family-member-card{
+    .member-picture{
+        position: relative;
+        .member-image{
+            border-radius: .25rem;
+            overflow: hidden;
+            img{
+                width: 100%;
+                height: auto;
+                object-fit: contain;
+            }
+        }
+        .realation-badge{
+            padding:.25rem .75rem;
+            border-radius: 50rem;
+            color: $dark;
+            font-size: $fs-xs;
+            background-color: $warning;
+            position: absolute;
+            right: 1rem;
+            top: 1rem;
+        }
+        .member-summary{
+            background: $white;
+            border-radius: .25rem;
+            padding:.5rem;
+            position: absolute;
+            bottom: .5rem;
+            left: .5rem;
+            right: .5rem;
+        }
+    }
+    .card-footer{
+        border: 0;
+        padding-block-start: 0;
+    }
+}

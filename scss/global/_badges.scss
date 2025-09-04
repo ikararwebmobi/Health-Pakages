@@ -52,6 +52,15 @@
             }
         }
     }
+    &.gray-dots{
+        color: $gray-300;
+        .badge{
+             color: $gray-300;
+            &:after{
+                background-color: $gray-200;
+            }
+        }
+    }
 }
 $newColors: (
 	"primary": $primary,
