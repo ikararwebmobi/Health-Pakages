@@ -906,9 +906,10 @@
                                 <div class="tab-pane fade" id="family" role="tabpanel" aria-labelledby="family-tab">
                                     <div class="tab-header d-flex align-items-center justify-content-between pb-3 mb-3">
                                         <h5 class="tab-title text-dark mb-0 fs-base">Family Details</h5>
-                                        <a href="#" class="btn btn-sm btn-primary">
+                                        <button class="btn btn-sm btn-primary" data-bs-toggle="modal"
+                                            data-bs-target="#addFamilyMember">
                                             <i class="ph ph-user-plus"></i> Add Family Member
-                                        </a>
+                                        </button>
                                     </div>
                                     <div class="family-member-list">
                                         <div class="row row-cols-sm-2 row-cols-md-2 row-cols-lg-2 row-cols-xl-3 g-3">
@@ -1472,16 +1473,71 @@
                                 </div>
                             </div>
                         </div>
-
-
-
-
-
                     </div>
                 </div>
             </div>
+            <!-- Modal -->
+            <div class="modal fade" id="addFamilyMember" tabindex="-1" aria-labelledby="addFamilyMember"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header border-0 pb-0">
+                            <h1 class="modal-title fs-md" id="addFamilyMember">Add Family Member</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Can’t find what you need? Send us a message with details about your issue, and our team
+                                will respond within 24 hours.</p>
+                            <div class="add-family-form">
 
+                                <div class="mb-3">
+                                    <label class="form-label">First Name</label>
+                                    <input type="text" placeholder="First Name" class="form-control">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Last Name</label>
+                                    <input type="text" placeholder="Last Name" class="form-control">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Gender</label>
+                                    <select type="text" class="form-select">
+                                        <option value="">Male</option>
+                                        <option value="">Female</option>
+                                        <option value="">Other</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Relation</label>
+                                    <select type="text" class="form-select">
+                                        <option value="">Option 01</option>
+                                        <option value="">Option 02</option>
+                                        <option value="">Option 03</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Age</label>
+                                    <input type="text" placeholder="Age" class="form-control">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Blood Group</label>
+                                    <input type="text" placeholder="Blood Group" class="form-control">
+                                </div>
+                                <div class="mb-3">
+                                    <label class="form-label">Disease</label>
+                                    <input type="text" placeholder="Disease" class="form-control">
+                                </div>
+                                <div class="d-grid gap-2">
+                                    <div class="upload-file-btn btn btn-light">
+                                        <i class="ph ph-paperclip"></i> Add
+                                        Picture
+                                        <input type="file" name="file" />
+                                    </div>
+                                    <button type="button" class="btn btn-primary">Add Member</button>
+                                </div>
+                            </div>
+                        </div>
         </main>
+
 
         <div class="footer">
             <p>&copy; 2025 Health Packages. All rights reserved.</p>
