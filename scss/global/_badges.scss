@@ -27,3 +27,65 @@
         color: shade($danger,25%);
     }
 }
+.badges-dots{
+    @include flex-item(row,flex-start,center);
+    flex-wrap: wrap;
+    padding: 0;
+    gap: .5rem;
+    .badge{
+        padding: 0 1rem 0 0;
+        position: relative;
+        &:after{
+            content: "";
+            position: absolute;
+            height: 8px;
+            width: 8px;
+            border-radius: 50%;
+            background-color: $white;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0;
+        }
+        &:last-child{
+            &:after{
+                display: none;
+            }
+        }
+    }
+}
+$newColors: (
+	"primary": $primary,
+	"secondary": $secondary,
+	"orange": $orange,
+	"warning": $warning,
+	"danger": $danger,
+	"info": $info,
+	"cyan": $cyan,
+	"pink": $pink,
+	"success": $success,
+	"purple": $purple,
+	"teal": $teal,
+	"white": $white,
+);
+.info-badge{
+    @include flex-item(row,flex-start, center);
+    border:1px solid $primary;;
+    background-color: $white;
+    border-radius: .25rem;
+    padding: .35rem .75rem;
+    gap: .35rem;
+    color: $gray-900;
+    font-size: $fs-sm;
+    i{
+        line-height: 1.5;
+        font-size: $fs-md;
+    }
+    @each $name, $color in $newColors {
+        &.info-badge-#{$name}{
+            border:1px solid $color;
+            background-color: tint($color,85%);
+        }
+    }
+}
+
+

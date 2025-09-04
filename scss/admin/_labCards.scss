@@ -1,3 +1,6 @@
+.lab-details-wrap{
+  background-color: shade($secondary,40%);
+}
 .lab-card{
     .card-header{
         position: relative;
@@ -10,4 +13,12 @@
 
         }
     }
+}
+.lab-detail-card{
+    background-color: shade($secondary,25%);
+}
+.lab-time-slots{
+    background-color: tint($primary,85%);
+    border-radius: .25rem;
+    padding: 1rem;
 }

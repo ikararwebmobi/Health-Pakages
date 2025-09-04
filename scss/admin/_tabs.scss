@@ -1,0 +1,30 @@
+.profile-tabs {
+  .nav {
+    border-bottom: 1px solid $gray-100;
+    margin-bottom: 1rem;
+    .nav-link {
+      color: $dark;
+      font-size: $fs-sm;
+      font-weight: 500;
+      padding: .5rem 1rem;
+      background: none;
+      border: none;
+      border-bottom: 2px solid transparent;
+      margin-bottom: -1px;
+      &:hover,
+      &.active {
+        color: $primary;
+        border-bottom: 2px solid $primary;
+        background: none;
+      }
+    }
+  }
+}
+.tab-header{
+    border-bottom: 1px solid $gray-100;
+}
+.form-actions{
+    padding-block-start: 1rem;
+    margin-block-start:1rem;
+    border-top: 1px solid $gray-100;
+}

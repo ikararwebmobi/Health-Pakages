@@ -1,0 +1,44 @@
+.profile-wrap{
+  background-color: shade($secondary,40%);
+}
+.profile-picture{
+    position: relative;
+    max-width: 200px;
+    .avatar{
+        height: 200px;
+        width: 200px;
+        position: relative;
+    }
+    .btn{
+        position: absolute;
+        bottom: -.5rem;
+        right: -.5rem;
+        z-index: 2;
+        font-size: 1.5rem;
+        i{
+            line-height: 1.2 !important;
+        }
+    }
+}
+.profile-tabs {
+  .nav {
+    border-bottom: 1px solid $gray-100;
+    margin-bottom: 1rem;
+    .nav-link {
+      color: $dark;
+      font-size: $fs-sm;
+      font-weight: 500;
+      padding: .5rem 1rem;
+      background: none;
+      border: none;
+      border-bottom: 2px solid transparent;
+      margin-bottom: -1px;
+      &:hover,
+      &.active {
+        color: $primary;
+        border-bottom: 2px solid $primary;
+        background: none;
+      }
+    }
+  }
+}

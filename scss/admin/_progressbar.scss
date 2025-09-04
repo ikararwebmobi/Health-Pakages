@@ -1,5 +1,4 @@
 .circular-completion{
-
 	.mkc_circle {
 		animation: mck_progress 1000ms ease-in-out;
 		stroke: $success;
@@ -7,7 +6,7 @@
 
 	@keyframes mck_progress {
 		0% {
-			stroke-dasharray: 0, 100;
+			stroke-dasharray: 0, 1000;
 		}
 	}
 
@@ -27,4 +26,27 @@
 		text-anchor: middle;
 		font-weight: 400;
 	}
+	&.semi-circular{
+		.mkc_circle-bg {
+			stroke: $white;
+			stroke-width: 20px;
+			opacity: 1;
+		}
+		.mkc_circle{
+			stroke-width: 20px;
+		}
+		.mkc_info {
+			fill:$white;
+			text-anchor: middle;
+			font-weight: 600;
+			font-size: $fs-3xl;
+		}
+		.mkc_sub_info {
+			fill:$white;
+			text-anchor: middle;
+			font-weight: 400;
+			font-size: $fs-sm;
+		}
+	}
 }
+
