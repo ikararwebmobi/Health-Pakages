@@ -48,8 +48,15 @@
 						<li class="nav-item"><a class="nav-link" href="#">Health Records</a></li>
 						<li class="nav-item"><a class="nav-link" href="#">Contacts</a></li>
 					</ul>
-					<a class="btn btn-md btn-outline-secondary ms-lg-3" href="login.html">Login</a>
-					<a class="btn btn-md btn-primary ms-lg-3" href="register.html">Register Now</a>
+					<div class="d-flex flex-column flex-lg-row gap-2 gap-xl-3 ms-3 ms-xl-5">
+						<a class="btn btn-sm btn-success btn-cart flex-shrink-1" data-bs-toggle="offcanvas"
+							href="#cartSummaryModal">
+							<i class="ph ph-shopping-cart-simple fs-md"></i>
+							<span class="badge bg-danger">03</span>
+						</a>
+						<a class="btn btn-md btn-secondary" href="login.html">Login</a>
+						<a class="btn btn-md btn-primary" href="register.html">Register Now</a>
+					</div>
 				</div>
 			</div>
 		</nav>
@@ -673,7 +680,112 @@
 			</div>
 		</div>
 	</footer>
+	<!--     CART MODAL  -->
+	<div class="offcanvas offcanvas-end" tabindex="-1" id="cartSummaryModal" aria-labelledby="offcanvasExampleLabel">
+		<div class="offcanvas-header">
+			<h5 class="offcanvas-title fs-md mb-0" id="offcanvasExampleLabel">Your Selected Tests <span
+					class="badge badge-sm bg-primary rounded-pill">3 tests</span></h5>
+			<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+		</div>
+		<div class="offcanvas-body pt-0">
+			<div class="lab-summary mb-3">
+				<div class="d-flex">
+					<div class="flex-shrink-0">
+						<i class="ph ph-duotone ph-flask"></i>
+					</div>
+					<div class="flex-grow-1 ms-1">
+						<p class="text-dark fw-medium mb-1 fs-sm">
+							City Diagnostics
+						</p>
+					</div>
+				</div>
+				<p class="fs-sm mb-1 text-gray-300">1st Floor, Heera Panna, Haji Ali,
+					Mahalaxmi,
+					Mumbai - 400034</p>
 
+				<div class="badges-dots gray-dots">
+					<div class="badge">
+						<p class="lab-phone fs-sm fw-normal text-gray-300 mb-0">
+							022-12345678</p>
+					</div>
+
+					<div class="badge">
+						<p class="lab-email fs-sm fw-normal text-gray-300 mb-0">
+							citydiagnostics@gmail.com
+						</p>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div class="cart-items-list d-flex flex-column gap-2 mb-3">
+				<div class="card cart-item border-0 bg-light-subtle">
+					<div class="card-body">
+						<div class="d-flex cart-item-main justify-content-between">
+							<div class="cart-item-info">
+								<h6 class="cart-item-name fs-sm fw-medium mb-1">CBC Blood Test <span
+										class="badge badge-fade bg-primary rounded-pill">15%
+										Off</span></h6>
+								<p class="fs-sm text-gray-300 mb-0">Result: 24 hours</p>
+							</div>
+							<div class="cart-item-meta-right text-end">
+								<h6 class="cart-item-price mb-1"><span
+										class="fs-xs text-gray-300 text-decoration-line-through">₹588.00</span> ₹499
+								</h6>
+								<a href="#" class="text-danger fs-sm text-decoration-none">Remove</a>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="card cart-item border-0 bg-light-subtle">
+					<div class="card-body">
+						<div class="d-flex cart-item-main justify-content-between">
+							<div class="cart-item-info">
+								<h6 class="cart-item-name fs-sm fw-medium mb-1">Lipid Profile</h6>
+								<p class="fs-sm text-gray-300 mb-0">Result: 48 hours</p>
+							</div>
+							<div class="cart-item-meta-right text-end">
+								<h6 class="cart-item-price mb-1">₹899</h6>
+								<a href="#" class="text-danger fs-sm text-decoration-none">Remove</a>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="card cart-item border-0 bg-light-subtle">
+					<div class="card-body">
+						<div class="d-flex cart-item-main justify-content-between">
+							<div class="cart-item-info">
+								<h6 class="cart-item-name fs-sm fw-medium mb-1">Vitamin D Test</h6>
+								<p class="fs-sm text-gray-300 mb-0">Result: 72 hours</p>
+							</div>
+							<div class="cart-item-meta-right text-end">
+								<h6 class="cart-item-price mb-1">₹699</h6>
+								<a href="#" class="text-danger fs-sm text-decoration-none">Remove</a>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div class="cart-price-summary">
+				<div class="d-flex justify-content-between fw-semibold mb-2"><span
+						class="text-dark">Subtotal</span><span class="text-dark">₹2097.00</span>
+				</div>
+
+
+
+			</div>
+			<div class="mt-5 text-center d-flex flex-column gap-3">
+				<button class="btn btn-primary w-100">
+					Book Now
+				</button>
+				<a href="#" class="text-dark fs-sm text-gray-300">Continue Browsing Tests</a>
+			</div>
+
+		</div>
+	</div>
 	<!--
 =====================================================================
 	JS

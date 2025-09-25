@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html class="js">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <title>Order Details | Health Pakages</title>
+    <!--
+=====================================================================
+	CSS
+=====================================================================
+-->
+    <link rel="stylesheet" type="text/css" href="styles/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="styles/phospher-icon.css" />
+    <link rel="stylesheet" type="text/css" href="styles/admin.css" />
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="images/logo/favicon.png" type="image/x-icon" />
+</head>
+
+<body>
+    <!--
+-----------------------------------------------------
+	MAIN CONTENT
+-----------------------------------------------------
+-->
+    <div class="admin-wrapper">
+
+        <header class="header bg-white sticky-top">
+            <div class="header-inner-wrap px-0 px-sm-2 px-md-3">
+                <div class="row justify-content-between align-items-center mx-0 gx-2 gx-md-3 gx-lg-0">
+                    <div
+                        class="col-4 col-sm-auto col-md-2 col-lg-3 col-xl-2 order-1 order-sm-1 order-md-1 brand-logo-wrap d-block d-lg-none">
+                        <div class="logo-block">
+                            <a class="brand-logo" href="#">
+                                <img src="images/logo/health-packages-logo.png" class="img-fluid" alt="health packages">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col col-sm-12 col-md order-3 order-sm-3 order-md-2">
+                        <div class="row gx-4 justify-content-center justify-content-md-start mb-3 mb-md-0">
+                            <div class="col col-lg-auto">
+                                <div class="location-wrap d-flex align-items-center h-100 py-1 py-md-4">
+                                    <i class="ph ph-map-pin"></i>
+                                    <h6 class="location-text mb-0 ms-2 fs-sm">Thane, Mumbai</h6>
+                                </div>
+                            </div>
+                            <div class="col-auto px-2">
+                                <div class="vr h-100"></div>
+                            </div>
+                            <div class="col col-lg-auto">
+                                <div class="calendar-wrap d-flex align-items-center h-100 py-1 py-md-4">
+                                    <i class="ph ph-calendar-dots"></i>
+                                    <h6 class="location-text mb-0 ms-2 fs-sm">Sunday, March 25</h6>
+                                </div>
+                            </div>
+                            <div class="col-auto px-2 d-none d-md-block">
+                                <div class="vr h-100"></div>
+                            </div>
+                            <div class="col-12 col-sm-4 col-lg-4 search-panel-wrap">
+                                <div class="search-panel" id="search-panel">
+                                    <div class="search-input">
+                                        <input type="text" class="form-control">
+                                        <span class="search-icon"><i class="ph ph-magnifying-glass"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-8 col-sm-auto col-md-auto order-2 order-sm-2 order-md-3">
+                        <div class="user-panel d-flex align-items-center justify-content-center">
+                            <div class="dropdown notification-dropdown">
+                                <a class="btn btn-sm btn-light position-relative" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="ph ph-bell fs-md"></i>
+                                    <span class="badge rounded-circle bg-danger">
+                                        <span class="visually-hidden">unread messages</span></span>
+
+                                </a>
+                                <div class="notification-content dropdown-menu dropdown-menu-end px-2">
+
+                                    <h5 class="note-sec-head">Today</h5>
+                                    <!-- item-->
+
+                                    <a href="#" class="dropdown-item notify-item">
+                                        <div class="card-body">
+                                            <span class="float-end noti-close-btn text-muted"><i
+                                                    class="ph ph-x"></i></span>
+                                            <div class="d-flex align-items-center">
+                                                <div class="flex-shrink-0">
+                                                    <div class="icon-box circle icon-box-sm">
+                                                        <i class="ph ph-bell-ringing"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1 text-truncate ms-2">
+                                                    <h5 class="noti-item-title">Datacorp <small
+                                                            class="fw-normal text-muted ms-1">1 min ago</small></h5>
+                                                    <small class="noti-item-subtitle text-muted">Caleb Flakelar
+                                                        commented on
+                                                        Admin</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <!-- item-->
+                                    <a href="#" class="dropdown-item notify-item">
+                                        <div class="card-body">
+                                            <span class="float-end noti-close-btn text-muted"><i
+                                                    class="ph ph-x"></i></span>
+                                            <div class="d-flex align-items-center">
+                                                <div class="flex-shrink-0">
+                                                    <div class="icon-box circle icon-box-sm">
+                                                        <i class="ph ph-bell-ringing"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1 text-truncate ms-2">
+                                                    <h5 class="noti-item-title">Admin <small
+                                                            class="fw-normal text-muted ms-1">1 hours ago</small></h5>
+                                                    <small class="noti-item-subtitle text-muted">New user
+                                                        registered</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <h5 class="note-sec-head">Yesterday</h5>
+
+                                    <!-- item-->
+                                    <a href="#" class="dropdown-item notify-item">
+                                        <div class="card-body">
+                                            <span class="float-end noti-close-btn text-muted"><i
+                                                    class="ph ph-x"></i></span>
+                                            <div class="d-flex align-items-center">
+                                                <div class="flex-shrink-0">
+                                                    <div class="icon-box circle icon-box-sm">
+                                                        <i class="ph ph-bell-ringing"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1 text-truncate ms-2">
+                                                    <h5 class="noti-item-title">Cristina Pride
+                                                        <small class="fw-normal text-muted ms-1">1 day ago</small>
+                                                    </h5>
+                                                    <small class="noti-item-subtitle text-muted">Hi, How are you? What
+                                                        about
+                                                        our next meeting</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <h5 class="note-sec-head">02 Jun 2025</h5>
+
+                                    <!-- item-->
+                                    <a href="#" class="dropdown-item notify-item">
+                                        <div class="card-body">
+                                            <span class="float-end noti-close-btn text-muted"><i
+                                                    class="ph ph-x"></i></span>
+                                            <div class="d-flex align-items-center">
+                                                <div class="flex-shrink-0">
+                                                    <div class="icon-box circle icon-box-sm">
+                                                        <i class="ph ph-bell-ringing"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1 text-truncate ms-2">
+                                                    <h5 class="noti-item-title">Datacorp</h5>
+                                                    <small class="noti-item-subtitle text-muted">Caleb Flakelar
+                                                        commented on
+                                                        Admin</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <!-- item-->
+                                    <a href="#" class="dropdown-item notify-item">
+                                        <div class="card-body">
+                                            <span class="float-end noti-close-btn text-muted"><i
+                                                    class="ph ph-x"></i></span>
+                                            <div class="d-flex align-items-center">
+                                                <div class="flex-shrink-0">
+                                                    <div class="icon-box circle icon-box-sm">
+                                                        <i class="ph ph-bell-ringing"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-grow-1 text-truncate ms-2">
+                                                    <h5 class="noti-item-title">Karen Robinson</h5>
+                                                    <small class="noti-item-subtitle text-muted">Wow ! this admin looks
+                                                        good
+                                                        and awesome design</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <a id="btn-search" class="btn btn-sm btn-light btn-search d-inline-block d-sm-none"
+                                href="#">
+                                <i class="ph ph-magnifying-glass"></i>
+                            </a>
+                            <div class="dropdown">
+                                <a class="d-flex align-items-center text-dark text-decoration-none" href="#"
+                                    id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    <span class="avatar avatar-md circle">
+                                        <img src="images/assets/avatar.png" class="img-fluid" alt="">
+                                    </span>
+                                    <div class="flex-1 ms-2">
+                                        <span class="d-none d-inline-md-block mb-1">Arjun More</span>
+                                        <i class="ph ph-caret-down fs-md"></i>
+                                    </div>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#"> <i class="ph ph-user"></i>Profile</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#"> <i class="ph ph-gear-six"></i>Settings</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#"> <i class="ph ph-sign-out"></i>Logout</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <button class="navbar-toggler d-lg-none border-0 my-3 ms-3" type="button"
+                                data-bs-toggle="offcanvas" data-bs-target="#sidebarNavigation"
+                                aria-controls="sidebarNavigation">
+                                <span class="navbar-toggler-icon"></span> </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+
+        <aside id="sidebarNavigation" class="left-sidebar offcanvas-lg offcanvas-start">
+            <div class="logo-block">
+                <a class="brand-logo" href="#">
+                    <img src="images/logo/health-packages-logo.png" class="img-fluid" alt="health packages">
+                </a>
+                <button type="button" class="btn-close position-absolute m-2 end-0 top-0 d-inline-block d-lg-none"
+                    data-bs-dismiss="offcanvas" data-bs-target="#sidebarNavigation" aria-label="Close"></button>
+            </div>
+            <nav id="sidebar" class="navigation-wrapper navbar leftbar-nav navbar-expand-lg px-0 h-100">
+                <ul class="navbar-nav">
+                    <div class="dropdown mb-4">
+                        <a class="d-flex align-items-center text-dark text-decoration-none" href="#"
+                            id="profileDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <span class="avatar avatar-md circle">
+                                <img src="images/assets/avatar.png" class="img-fluid" alt="">
+                            </span>
+                            <div class="flex-grow-1 ms-2 position-relative">
+                                <span class="d-inline-md-block mb-1">Arjun More</span>
+                                <span class="d-block text-gray-300 fs-xs">Change profile</span>
+                                <span class="dropdown-arrow position-absolute end-0 top-0"><i
+                                        class="ph ph-caret-down fs-md"></i></span>
+
+                            </div>
+                        </a>
+                        <div class="dropdown-menu w-100">
+                            <div class="dropdown-item">
+                                <a href="#" class="d-flex align-items-center text-decoration-none">
+                                    <div class="flex-shrink-0">
+                                        <span class="avatar avatar-md circle">
+                                            <img src="images/assets/avatar.png" class="img-fluid" alt="">
+                                        </span>
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <p class="text-dark mb-0"> Arjun More</p>
+                                        <span class="fs-xs text-gray-200">Self</span>
+                                    </div>
+                                </a>
+
+                            </div>
+                            <div class="dropdown-item">
+                                <a href="#" class="d-flex align-items-center text-decoration-none">
+                                    <div class="flex-shrink-0">
+                                        <span class="avatar avatar-md circle">
+                                            <img src="images/assets/picture-2.png" class="img-fluid" alt="">
+                                        </span>
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <p class="text-dark mb-0"> Priya More</p>
+                                        <span class="fs-xs text-gray-200">Wife</span>
+                                    </div>
+                                </a>
+
+                            </div>
+                            <div class="dropdown-item">
+                                <a href="#" class="d-flex align-items-center text-decoration-none">
+                                    <div class="flex-shrink-0">
+                                        <span class="avatar avatar-md circle">
+                                            <img src="images/assets/picture.png" class="img-fluid" alt="">
+                                        </span>
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <p class="text-dark mb-0">Raman More </p>
+                                        <span class="fs-xs text-gray-200">Father</span>
+                                    </div>
+                                </a>
+
+                            </div>
+                            <div class="dropdown-item">
+                                <a href="#" class="d-flex align-items-center text-decoration-none">
+                                    <div class="flex-shrink-0">
+                                        <span class="avatar avatar-md circle">
+                                            <img src="images/assets/picture-1.png" class="img-fluid" alt="">
+                                        </span>
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <p class="text-dark mb-0">Malti More</p>
+                                        <span class="fs-xs text-gray-200">Mother</span>
+                                    </div>
+                                </a>
+
+                            </div>
+                            <div class="dropdown-item">
+                                <a href="#" class="d-flex align-items-center text-decoration-none">
+                                    <div class="flex-shrink-0">
+                                        <span class="avatar avatar-md circle">
+                                            <img src="images/assets/picture-3.png" class="img-fluid" alt="">
+                                        </span>
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <p class="text-dark mb-0">Aryan More</p>
+                                        <span class="fs-xs text-gray-200">Son</span>
+                                    </div>
+                                </a>
+
+                            </div>
+                            <div class="dropdown-item">
+                                <a href="#" class="d-flex align-items-center text-decoration-none">
+                                    <div class="flex-shrink-0">
+                                        <span class="avatar avatar-md circle">
+                                            <img src="images/assets/picture-4.png" class="img-fluid" alt="">
+                                        </span>
+                                    </div>
+                                    <div class="flex-grow-1 ms-3">
+                                        <p class="text-dark mb-0">Anaya More</p>
+                                        <span class="fs-xs text-gray-200">Daughter</span>
+                                    </div>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="ph ph-gauge"></i>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="ph ph-heartbeat"></i>
+                            Health Records
+                            <span class="badge">03</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="ph ph-test-tube"></i>
+                            Recommended Tests
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="ph ph-calendar-dots"></i>
+                            Appointments
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="ph ph-flask"></i>
+                            Find Labs
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="ph ph-user"></i>
+                            Profile
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="ph ph-chats-circle"></i>
+                            Chat
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="ph ph-headphones"></i>
+                            Support
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">
+                            <i class="ph ph-gear-six"></i>
+                            Settings
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="page-content profile-page-wrapper">
+            <div class="container-fluid px-0">
+                <div class="page-header mb-3 mb-md-0">
+                    <div
+                        class="row row-cols-md-2 row-col-lg-2 row-cols-xl-auto justify-content-between align-items-center g-2">
+                        <div class="cols">
+                            <h4>
+                                Order Details
+                            </h4>
+                            <nav class="breadcrumb">
+                                <a class="breadcrumb-item" href="#">Dashboard</a>
+                                <span class="breadcrumb-item active" aria-current="page">Order Details</span>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-details-module">
+
+                    <div class="row g-4">
+                        <div class="col-lg-8">
+                            <div class="card border-0 cart-info-card">
+                                <div class="card-body">
+                                    <div
+                                        class="card-header p-0 bg-transparent d-md-flex align-items-center justify-content-between pb-2 mb-3">
+                                        <h5 class="card-title text-dark mb-0 fs-md">Order #: HB-7890-2024</h5>
+                                        <p>Date: 15 Jul 2024</p>
+                                    </div>
+                                    <h6>Reports</h6>
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <h6>Complete Blood Count (CBC)</h6>
+                                            <ul class="list-unstyled list-circle mb-3 text-gray-300 fs-sm py-2">
+                                                <li> Fasting Required:* 8-12 Hours</li>
+                                                <li> Avoid strenuous exercise</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card cart-summary border-0">
+                                <div class="card-body">
+                                    <h6>Order Timeline</h6>
+                                    <hr>
+                                    <h6 class="text-gray-300">Address</h6>
+                                    <p class="mb-3">123, ABC Apartments, XYZ Road, Thane West, Mumbai - 400601</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="footer">
+            <p>&copy; 2025 Health Packages. All rights reserved.</p>
+        </div>
+
+        <!--
+=====================================================================
+	JS
+=====================================================================
+-->
+        <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/admin-theme.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+.table-responsive-wrap{
+    .cart-table{
+        border:0 !important;
+         thead{
+           >tr{
+                >th{
+                    background-color: $light !important;
+                    &:first-child {
+                        border-radius: .5rem 0 0 .5rem;
+                    }
+                    &:last-child {
+                        border-radius:0 .5rem .5rem 0;
+                    }
+                    &.price-cell{
+                        text-align: right;
+                    }
+                }
+            }
+        }
+        tbody{
+            >tr{
+                border: 0 !important;
+                >td{
+                    border-color: $light !important;
+                    &[data-title="Remove"]{
+                        max-width: 5%;
+                    }
+                    &.price-cell{
+                        text-align: right;
+                    }
+
+                }
+            }
+        }
+        tfoot{
+            padding-top: .5rem;
+            >tr{
+                &:first-child{
+                    >td{
+                      padding-top: .5rem;
+                    }
+                }
+                >td{
+                    text-align: right;
+                    padding-block: .25rem;
+                }
+            }
+        }
+        .promocode-input{
+            max-width: 280px;
+            @include media-breakpoint-up(xl){
+               position: absolute;
+            }
+        }
+    }
+    @include media-breakpoint-down(md){
+        .cart-table{
+            thead{
+                 >tr{
+                    >th,>td{
+                        display: none;
+                    }
+                }
+            }
+            tbody {
+                >tr{
+                    border: 1px solid $gray-100 !important;
+                    border-bottom: 3px solid $gray-100 !important;
+                    >td{
+                        display: block;
+                        position: relative;
+                        // padding-inline-start: 40%;
+                        // padding-inline-end: 0;
+                        width: 50%;
+                        float: left;
+                        min-height: 50px;
+                        border: 0;
+                        &:first-child{
+                            width:100%;
+                            height: auto;
+                            border: 0;
+                            padding-bottom: 0;
+                        }
+                        // &:before{
+                        //     content: attr(data-title);
+                        //     position: absolute;
+                        //     background-color: $gray-50;
+                        //     left: 0;
+                        //     top:0;
+                        //     width: 35%;
+                        //     height: 100%;
+                        //     padding: .5rem;
+                        // }
+                        &.empty-cell{
+                            display: none;
+                        }
+                        &[data-title="Remove"]{
+                            max-width: 100%;
+                            text-align: right;
+                            &:before{
+                            content: "";
+                            width: 0;
+                            background-color: transparent;
+
+                        }
+                        }
+                        &.price-cell{
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+            tfoot{
+                display: block;
+                >tr{
+                    &:first-child{
+                        td{
+                         &:first-child{
+                           width: 100% !important;
+                         }
+                        }
+                    }
+                    >td{
+                        display: block;
+                        width: 48%;
+                        float: left;
+                        padding-inline: 0;
+                        padding-block: .5rem;
+                        text-align: right;
+                        // &:first-child,&:nth-child(2){
+                        //     text-align: left;
+                        // }
+                        &.empty-cell{
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
