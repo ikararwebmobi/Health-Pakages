@@ -37,9 +37,6 @@ $grayColors:(
 	}
 }
 
-/* #Progress
-================================================== */
-
 .suggested-test-list,.appointment-list{
 	.list-group-item{
 		position: relative;
@@ -82,7 +79,7 @@ $grayColors:(
 			content: "\e18a";
 			position: absolute;
 			left: 0;
-			top: .35rem; 
+			top: .35rem;
 			font-family: "Phosphor-Fill";
 			font-size:.5rem;
 		}
